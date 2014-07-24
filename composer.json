@@ -16,11 +16,5 @@
     },
     "autoload": {
         "psr-0": { "Whisller\\TechDataBundle": "" }
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@github.com:whisller/tech-data.git"
-        }
-    ]
+    }
 }
