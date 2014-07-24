@@ -17,7 +17,6 @@
     "autoload": {
         "psr-0": { "Whisller\\TechDataBundle": "" }
     },
-    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "git",
