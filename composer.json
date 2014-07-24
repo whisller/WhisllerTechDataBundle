@@ -1,14 +1,13 @@
 {
-    "name": "jms/serializer-bundle",
+    "name": "whisller/tech-data-bundle",
     "type": "symfony-bundle",
-    "description": "Allows you to easily serialize, and deserialize data of any complexity",
-    "keywords": ["serialization", "deserialization", "json", "jaxb", "xml"],
-    "homepage": "http://jmsyst.com/bundles/JMSSerializerBundle",
-    "license": "Apache2",
+    "description": "Symfony2 bundle for https://github.com/whisller/tech-data",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Johannes M. Schmitt",
-            "email": "schmittjoh@gmail.com"
+            "name": "Daniel Ancuta",
+            "email": "whisller@gmail.com",
+            "homepage": "http://ancuta.org"
         }
     ],
     "require": {
