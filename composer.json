@@ -19,5 +19,5 @@
     "autoload": {
         "psr-0": { "Whisller\\Bundle\\TechDataBundle": "" }
     },
-    "target-dir": "Whisller/TechDataBundle/WhisllerTechDataBundle"
+    "target-dir": "Whisller/Bundle/TechDataBundle"
 }
