@@ -12,10 +12,12 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "whisller/tech-data": "@dev"
+        "whisller/tech-data": "@dev",
+        "jms/serializer-bundle": ">=0.13.*"
     },
     "minimum-stability": "stable",
     "autoload": {
         "psr-0": { "Whisller\\TechDataBundle": "" }
-    }
+    },
+    "target-dir": "Whisller/TechDataBundle/WhisllerTechDataBundle"
 }

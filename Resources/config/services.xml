@@ -3,18 +3,26 @@
 <container xmlns="http://symfony.com/schema/dic/services"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
-    <!--
     <parameters>
-        <parameter key="whisller_tech_data.example.class">Whisller\TechDataBundle\Example</parameter>
+        <parameter key="whisller_tech_data.xml_deserialization_visitor.doctype_whitelist" type="collection">
+            <parameter><![CDATA[<!DOCTYPE XGResponse SYSTEM "http://intcom.xml.techdata-europe.com:8080/XMLGate/XMLGateResponse.dtd">]]></parameter>
+        </parameter>
+        <parameter key="whisller_tech_data.client.class">Whisller\TechData\TechDataClient</parameter>
     </parameters>
 
     <services>
-        <service id="whisller_tech_data.example" class="%whisller_tech_data.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="whisller_tech_data.client" class="%guzzle.client.class%">
+            <argument type="service" id="guzzle.client"/>
+            <argument type="service" id="jms_serializer"/>
+        </service>
+
+        <service id="whisller_tech_data.xml_deserialization_visitor" class="%jms_serializer.xml_deserialization_visitor.class%">
+            <argument type="service" id="jms_serializer.naming_strategy" />
+            <argument type="service" id="jms_serializer.object_constructor" />
+            <call method="setDoctypeWhitelist">
+                <argument>%whisller_tech_data.xml_deserialization_visitor.doctype_whitelist%</argument>
+            </call>
+            <tag name="jms_serializer.deserialization_visitor" format="tech_data" />
         </service>
     </services>
-    -->
 </container>
