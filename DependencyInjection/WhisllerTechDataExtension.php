@@ -1,6 +1,6 @@
 <?php
 
-namespace Whisller\TechDataBundle\DependencyInjection;
+namespace Whisller\Bundle\WhisllerTechDataBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

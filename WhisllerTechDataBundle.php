@@ -1,6 +1,6 @@
 <?php
 
-namespace Whisller\TechDataBundle;
+namespace Whisller\Bundle\WhisllerTechDataBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

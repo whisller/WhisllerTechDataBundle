@@ -1,6 +1,6 @@
 <?php
 
-namespace Whisller\TechDataBundle\DependencyInjection;
+namespace Whisller\Bundle\WhisllerTechDataBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
