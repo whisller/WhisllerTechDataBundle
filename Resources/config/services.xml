@@ -11,8 +11,10 @@
     </parameters>
 
     <services>
-        <service id="whisller_tech_data.client" class="%guzzle.client.class%">
-            <argument type="service" id="guzzle.client"/>
+        <service id="whisller_tech_data.http.client" class="GuzzleHttp\Client" />
+
+        <service id="whisller_tech_data.client" class="%whisller_tech_data.client.class%">
+            <argument type="service" id="whisller_tech_data.http.client"/>
             <argument type="service" id="jms_serializer"/>
         </service>
 
